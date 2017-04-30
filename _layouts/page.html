@@ -2,6 +2,13 @@
 layout: default
 ---
 
-<section class="markdown">
-  {{ content }}
+<section class="pl4 pt4">
+    {{page.title}}
+    {% if {{page.time}} != null %}
+    <span class="light-silver pl3"> {{page.time}} </span>
+    {% endif %}
+
+  <div class="markdown">
+    {{ content }}
+  </div>
 </section>
