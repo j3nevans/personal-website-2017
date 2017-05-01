@@ -1,0 +1,17 @@
+<nav class="bg-near-white min-vh-100 w6 flex-none">
+  <div class="w6 pt3 ph4 fixed">
+    <div>
+      <p>jen evans</p>
+      <p>designer based in baltimore, md</p>
+      <p>50% of <a href="http://defaultvalue.info/" class="link underline green">default value</a></p>
+    </div>
+
+    <div class="pt4">
+      {% assign nav = site.projects | sort: "position" %}
+      {% assign filtered-nav = nav | where: "publish", "true" %}
+      {% for project in filtered-nav %}
+        <a href="{{project.url}}" class="link underline green"> {{project.title}}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>

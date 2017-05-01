@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar|Roboto+Mono');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+// img { max-width: 52rem; }
+
+.w6 {
+  width: 20rem;
+}
+
+.default-blue {
+  color: blue;
+}
+
+h1 {
+  font-family: 'Eczar', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+@media screen and (min-width:45em) {
+  .pl6-smq { padding-left: 8rem; }
+  .pr5-smq { padding-right: 4rem; }
+  .pr6-smq { padding-right: 8rem; }
+}
+
+@media screen and (min-width:75em) {
+  .flex-row-mq { flex-direction: row; }
+  .vh-100-mq { height: 100vh };
+  .h-25-mq { height: 25% };
+  h1 { font-size: 3.5rem; }
+}
